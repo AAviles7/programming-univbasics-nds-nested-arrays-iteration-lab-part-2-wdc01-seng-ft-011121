@@ -8,5 +8,10 @@ def find_min_in_nested_arrays(src)
     y = 0
     src[x].length.times do
       temp = src[x][y].min(1)
+      ans.push(temp)
+      y += 1
+    end
+    x += 1
+  end
   
 end
