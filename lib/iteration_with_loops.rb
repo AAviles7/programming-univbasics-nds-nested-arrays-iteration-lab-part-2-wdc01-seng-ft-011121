@@ -10,10 +10,12 @@ def find_min_in_nested_arrays(src)
     src[x].length.times do
       if comp > src[x][y]
         comp = src[x][y]
+        ans.push(comp)
       end
       y += 1
     end
     x += 1
   end
+  return ans
   
 end
