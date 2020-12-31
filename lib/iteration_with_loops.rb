@@ -6,14 +6,14 @@ def find_min_in_nested_arrays(src)
   x = 0
   src.length.times do
     y = 0
-    comp = src[x][0]
+    comp = src[x][y]
     src[x].length.times do
       if comp > src[x][y]
         comp = src[x][y]
-        ans.push(comp)
       end
       y += 1
     end
+    ans.push(comp)
     x += 1
   end
   return ans
