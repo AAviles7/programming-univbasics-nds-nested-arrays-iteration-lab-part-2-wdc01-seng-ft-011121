@@ -7,8 +7,9 @@ def find_min_in_nested_arrays(src)
   src.length.times do
     y = 0
     src[x].length.times do
-      temp = src[x][y].min(1)
-      ans.push(temp)
+      temp = src[x][y]
+      m = temp.min(1)
+      ans.push(m)
       y += 1
     end
     x += 1
