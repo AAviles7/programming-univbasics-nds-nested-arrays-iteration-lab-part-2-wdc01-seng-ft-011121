@@ -8,7 +8,7 @@ def find_min_in_nested_arrays(src)
     y = 0
     comp = src[x][y]
     src[x].length.times do
-      if comp > src[x][y]
+      if comp >= src[x][y]
         comp = src[x][y]
         ans.push(comp)
       end
